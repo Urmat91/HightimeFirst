@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="15dp"
+    tools:context=".lessons.alphabet.lessons.CharAActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginVertical="20dp"
+                android:src="@drawable/ic_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCancel"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radius_layout"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="35dp"
+                    android:layout_marginTop="35dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="Буква “А”"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:text="Видеоурок №1"
+                                android:textSize="16sp"
+                                android:textColor="@color/background"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:text="Бесплатный просмотр"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:onClick="on1Video"
+                            android:layout_gravity="center"
+                            android:background="@drawable/raund_button"
+                            android:src="@drawable/ic_play_arrow_"
+                            android:textSize="18sp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:text="Упражнение №1"
+                                android:textSize="16sp"
+                                android:textColor="@color/background"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:text="Бесплатный просмотр"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:onClick="onUPR"
+                            android:layout_gravity="center"
+                            android:background="@drawable/raund_button"
+                            android:src="@drawable/ic_play_arrow_"
+                            android:textSize="18sp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:text="Видеоурок №2"
+                                android:textSize="16sp"
+                                android:textColor="@color/background"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:text="Бесплатный просмотр"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:onClick="on2Video"
+                            android:layout_gravity="center"
+                            android:background="@drawable/raund_button"
+                            android:src="@drawable/ic_play_arrow_"
+                            android:textSize="18sp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:text="Видеоурок №3"
+                                android:textSize="16sp"
+                                android:textColor="@color/background"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:text="Бесплатный просмотр"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:onClick="on3Video"
+                            android:layout_gravity="center"
+                            android:background="@drawable/raund_button"
+                            android:src="@drawable/ic_play_arrow_"
+                            android:textSize="18sp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:text="Тест"
+                                android:textSize="16sp"
+                                android:textColor="@color/background"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:text="Бесплатный просмотр"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_gravity="center"
+                            android:background="@drawable/raund_button"
+                            android:src="@drawable/ic_play_arrow_"
+                            android:textSize="18sp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:text="A"
+                    android:textColor="#fff" android:gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/raund_button_blue"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

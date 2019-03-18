@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.urmat.hightime">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".api.App"
+        android:allowBackup="true"
+        android:icon="@drawable/hap"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/hap"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity">
+
+        </activity>
+        <activity android:name=".Auth.register.CheckInActivity" >
+
+        </activity>
+        <activity android:name=".Auth.login.ToComeInActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Activity.LevelActivity" />
+        <activity android:name=".Activity.OurBranchesActivity" />
+        <activity android:name=".Activity.AboutUsActivity" />
+        <activity android:name=".Activity.OurTeamActivity" />
+        <activity android:name=".Activity.StudentActivity" />
+        <activity android:name=".lessons.alphabet.AlphabetActivity" />
+        <activity android:name=".lessons.alphabet.lessons.CharAActivity" />
+        <activity android:name=".lessons.beginner.BeginnerActivity" />
+        <activity android:name=".lessons.pre_intermediate.PreIntermadiateActivity" />
+        <activity android:name=".lessons.intermediate.IntermediateActivity" />
+        <activity android:name=".lessons.upper_intermediate.UpperIntermediateActivity" />
+        <activity android:name=".lessons.advanced.AdvancedActivity" />
+        <activity android:name=".news.NewsActivity" />
+        <!-- <activity android:name=".TestActivity" /> -->
+        <activity android:name=".Contact.ContactActivity" />
+        <activity
+            android:name=".lessons.video.VideoActivity"
+            android:configChanges="orientation" />
+        <activity android:name=".personal_area.PersonalAreaActivity"></activity>
+    </application>
+
+</manifest>

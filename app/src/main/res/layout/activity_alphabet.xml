@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".lessons.alphabet.AlphabetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundGreen"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:onClick="onBack"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_white"/>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText2"
+                    android:text="Уровень Alphabet"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_marginVertical="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/alphabet_1"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorStudent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginVertical="40dp"
+                android:background="@color/backgroundGray">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Что входит в курс:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="27 уроков"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:text="2 пробных бесплатных урока"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:text="Тестирование"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:text="2.3 часа видео"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="25dp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Стоимость курса:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="300 сом"
+                        android:textColor="@color/textR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <EditText
+                        android:textSize="19sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="10dp"
+
+                        android:textColor="#636060"
+                        android:hint="Промокод"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rounded_edittext"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/alphabet_2"
+                        android:layout_width="100dp"
+                        android:layout_height="47dp" />
+
+                    <ImageView
+                        android:src="@drawable/alphabet_3"
+                        android:layout_width="100dp"
+                        android:layout_height="47dp" />
+                    <ImageView
+                        android:src="@drawable/alphabet_4"
+                        android:layout_width="100dp"
+                        android:layout_height="47dp"
+                        android:layout_marginBottom="17dp"/>
+
+                    <Button
+                        android:onClick="onBuy"
+                        android:text="Купить"
+                        android:paddingHorizontal="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText2"
+                        android:background="@drawable/radius"
+                        android:layout_marginBottom="20dp"/>
+
+                    <Button
+                        android:onClick="onToSend"
+                        android:text="Отправить"
+                        android:paddingHorizontal="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText2"
+                        android:background="@drawable/radius"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#70fcfcfc"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_marginHorizontal="15dp"
+                    android:onClick="onOtherLevel"
+                    android:text="Другие уровни"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorText2"
+                    android:background="@drawable/radius"/>
+
+                <TextView
+                    android:text="УРОКИ ПО БУКВАМ"
+                    android:layout_gravity="center"
+                    android:textColor="@color/background"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginVertical="30dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp">
+
+                    <Button
+                        android:text="A"
+                        android:onClick="onA"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <Button
+                        android:text="B"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="C"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="E"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp">
+
+                    <Button
+                        android:text="F"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <Button
+                        android:text="G"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="H"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="I"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp">
+
+                    <Button
+                        android:text="J"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <Button
+                        android:text="K"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="L"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="M"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp">
+
+                    <Button
+                        android:text="N"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <Button
+                        android:text="O"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="P"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="Q"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp">
+
+                    <Button
+                        android:text="R"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <Button
+                        android:text="S"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="T"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="U"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp">
+
+                    <Button
+                        android:text="V"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <Button
+                        android:text="W"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="X"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="Y"
+                        android:background="@drawable/raund_button"
+                        android:textColor="@color/background"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="8dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:text="Z"
+                    android:background="@drawable/raund_button"
+                    android:textColor="@color/background"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"/>
+
+                <Button
+                    android:text="ЗАКЛЮЧЕНИЕ"
+                    android:background="@drawable/raund_button"
+                    android:textColor="@color/textR"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="30dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

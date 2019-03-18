@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="15dp"
+    tools:context=".Auth.login.ToComeInActivity">
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:text="Имя"
+        android:textColor="@color/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:padding="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:text="Пароль"
+        android:textColor="@color/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:onClick="onToComeIn"
+        android:text="Войти"
+        android:paddingHorizontal="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/colorText2"
+        android:background="@drawable/radius"
+        android:layout_marginVertical="10dp"/>
+
+    <TextView
+        android:onClick="onCancel"
+        android:text="Отмена"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"/>
+</LinearLayout>
